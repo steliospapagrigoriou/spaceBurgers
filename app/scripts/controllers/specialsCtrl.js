@@ -1,5 +1,9 @@
 'use strict';
 
+function isSpecial(element){
+    return element.promoted
+}
+
 angular.module('spaceBurgersApp')
     .controller('specialsCtrl', function ($scope) {
         $scope.specials = [

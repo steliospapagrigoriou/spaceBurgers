@@ -1,12 +1,14 @@
 'use strict';
 
+function listThe(burgerList){
+
+}
+
 angular.module('spaceBurgersApp')
-    .controller('burgerListCtrl', function ($scope) {
+    .controller('burgerListCtrl',['$scope', 'Burgers', function ($scope, Burgers) {
 
-        $scope.everything = [
-            'special1',
-            'special2',
-            'special3'
-        ]
-
-    });
+        Burgers.getAll()
+            .then(function(response){
+                $scope.burgerList = response.data.burgers;
+            })
+    }]);

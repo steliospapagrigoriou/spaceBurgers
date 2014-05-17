@@ -1,0 +1,77 @@
+{
+    "latency": 2,
+    "burgers": [
+        {
+            "name": "Seitan Burger",
+            "image": "/static/burgers/seitan.jpg",
+            "bitcoin": 599,
+            "notes": "Made from seitan in the Cetus system, imported to Space Port by the Intergalactic Vegan Association.",
+            "vegetarian": true,
+            "promoted": false,
+            "id": 1
+        },
+        {
+            "name": "Diner Burger",
+            "image": "/static/burgers/diner.jpg",
+            "bitcoin": 750,
+            "notes": "We periodically send spies to Earth to bring this delicacy back to Space Port.",
+            "vegetarian": false,
+            "promoted": true,
+            "id": 2
+        },
+        {
+            "name": "Halloumi Avocado Burger",
+            "image": "/static/burgers/halloumi.jpg",
+            "bitcoin": 9999,
+            "notes": "After the great halloumi depression of 2138 this is probably the rarest ingredient you'll find anywhere in the galaxy.",
+            "vegetarian": true,
+            "promoted": false,
+            "id": 3
+        },
+        {
+            "name": "Grizzly Bear Burger",
+            "image": "/static/burgers/grizzly.jpg",
+            "bitcoin": 888,
+            "notes": "The origin of this burgers name is unknown but it tastes great none the less. Just like fresh over the counter in Aldebaran.",
+            "vegetarian": false,
+            "promoted": false,
+            "id": 4
+        },
+        {
+            "name": "Demolisher",
+            "image": "/static/burgers/demolisher.jpg",
+            "bitcoin": 5000,
+            "notes": "One all time favourite of Klingons and Vogons. Earthlings might find this to be ... demolishing.",
+            "vegetarian": false,
+            "promoted": false,
+            "id": 5
+        },
+        {
+            "name": "Lava Burger",
+            "image": "/static/burgers/lava.jpg",
+            "bitcoin": 749,
+            "notes": "If dragons were a spacefaring species, this would be their burger.",
+            "vegetarian": false,
+            "promoted": false,
+            "id": 6
+        },
+        {
+            "name": "Bean burger",
+            "image": "/static/burgers/bean.jpg",
+            "bitcoin": 799,
+            "notes": "After Bitcoin replaced beans as the intergalactic currency, these are finally affordable again for the common spacefarer.",
+            "vegetarian": true,
+            "promoted": true,
+            "id": 7
+        },
+        {
+            "name": "Skyscraper",
+            "image": "/static/burgers/skyscraper.jpg",
+            "bitcoin": 1250,
+            "notes": "Rumor has it that one of these was once structural support for an intergalactic peace treaty.",
+            "vegetarian": false,
+            "promoted": false,
+            "id": 8
+        }
+    ]
+}
