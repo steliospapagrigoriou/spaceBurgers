@@ -1,6 +1,6 @@
 'use strict';
 
-var resourceUrl = 'https://space-burgers.herokuapp.com/burgers/'
+var resourceUrl = '/spaceApi/burgers/'
 
 angular.module('spaceBurgersApp')
     .factory('Burgers', ['$http', function($http) {

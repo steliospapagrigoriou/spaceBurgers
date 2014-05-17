@@ -41,3 +41,5 @@ while implementing the application.
 
 
 NOTE: GEtting kicked out by the cafe! Half an hour break to find a place to sit :)
+EDIT: Back home - had some dinner too
+
