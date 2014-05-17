@@ -5,33 +5,38 @@ function isSpecial(element){
 }
 
 angular.module('spaceBurgersApp')
-    .controller('specialsCtrl',['$scope', 'Burgers', '$interval', 'localStorageService', '$window',
+    .controller('mainCtrl',['$scope', 'Burgers', '$interval', 'localStorageService', '$window',
         function ($scope, Burgers,  $interval, localStorageService, $window) {
 
-            updateBurgerList();
+            displayBurgers(); // maybe we have something stored - give immediate user gratification
+            update();
 
             $interval(function(){
                 console.log('Updating');
-                updateBurgerList();
+                update();
             }, 15000); // update every 15secs
 
             /******************************************************************************/
 
-            function updateBurgerList(){
-                console.log($window.navigator.onLine)
+            function update(){
                 if ($window.navigator.onLine){
+                    // fetch only if online
                     Burgers.getAll()
                         .then(function(response){
                             localStorageService.set('burgers', response.data.burgers);
                             displaySpecial();
                         });
                 }
-                displaySpecial();
+                displayBurgers();
             }
 
-            function displaySpecial(){
+            function displayBurgers(){
                 var burgerList = localStorageService.get('burgers');
-                if (burgerList)
+                if (burgerList){
                     $scope.specials = burgerList.filter(isSpecial);
+                    $scope.burgerList = burgerList;
+                }
+
             }
-    }]);
+
+        }]);
