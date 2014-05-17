@@ -2,5 +2,6 @@
 
 angular
   .module('spaceBurgersApp', [
-    'app.directives.burgerInfo'
+    'app.directives.burgerInfo',
+    'LocalStorageModule'
   ])

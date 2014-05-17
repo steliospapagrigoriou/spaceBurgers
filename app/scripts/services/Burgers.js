@@ -16,6 +16,6 @@ angular.module('spaceBurgersApp')
                         bitcoin: bitcoins
                     }
                 );
-            }
+            },
         }
     }]);
