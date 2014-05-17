@@ -40,3 +40,4 @@ and include a paragraph about the choices and decisions you have made
 while implementing the application. 
 
 
+NOTE: GEtting kicked out by the cafe! Half an hour break to find a place to sit :)
