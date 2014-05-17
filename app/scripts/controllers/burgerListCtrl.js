@@ -23,5 +23,4 @@ angular.module('spaceBurgersApp')
                 $scope.burgerList = response.data.burgers;
             })
 
-        $(".thumbnails").find(".thumbnail").uniformHeight();
     }]);
