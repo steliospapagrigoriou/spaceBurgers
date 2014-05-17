@@ -5,10 +5,13 @@ function isSpecial(element){
 }
 
 angular.module('spaceBurgersApp')
-    .controller('specialsCtrl', function ($scope) {
-        $scope.specials = [
-            'special1',
-            'special2',
-            'special3'
-        ];
-    });
+    .controller('specialsCtrl',['$scope', 'Burgers', function ($scope, Burgers) {
+
+        Burgers.getAll()
+            .then(function(response){
+                var burgersList = response.data.burgers;
+                $scope.specials = burgersList.filter(isSpecial)
+            });
+
+
+    }]);

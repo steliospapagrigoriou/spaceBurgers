@@ -1,4 +1,6 @@
 'use strict';
 
 angular
-  .module('spaceBurgersApp', [])
+  .module('spaceBurgersApp', [
+    'app.directives.burgerInfo'
+  ])

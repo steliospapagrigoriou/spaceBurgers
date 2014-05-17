@@ -3,6 +3,17 @@
 function listThe(burgerList){
 
 }
+(function($) {
+    $.fn.uniformHeight = function() {
+        var maxHeight   = 0,
+            max         = Math.max;
+
+        return this.each(function() {
+            maxHeight = max(maxHeight, $(this).height());
+        }).height(maxHeight);
+    }
+})(jQuery);
+
 
 angular.module('spaceBurgersApp')
     .controller('burgerListCtrl',['$scope', 'Burgers', function ($scope, Burgers) {
@@ -11,4 +22,6 @@ angular.module('spaceBurgersApp')
             .then(function(response){
                 $scope.burgerList = response.data.burgers;
             })
+
+        $(".thumbnails").find(".thumbnail").uniformHeight();
     }]);
