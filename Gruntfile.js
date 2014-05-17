@@ -72,7 +72,13 @@ module.exports = function (grunt) {
       proxies: [{
         context: '/spaceApi', // the context of the data service
         host: 'space-burgers.herokuapp.com', // wherever the data service is running
-        port: 443 // the port that the data service is running on
+        port: 443, // the port that the data service is running on
+        https: true,
+        changeOrigin: true,
+        xforward: false,
+        rewrite: {
+              '^/spaceApi': ''
+        }
       }],
       livereload: {
         options: {

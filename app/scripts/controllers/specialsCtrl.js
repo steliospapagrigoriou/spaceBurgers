@@ -18,29 +18,31 @@ angular.module('spaceBurgersApp')
             // but since we are not the burger place, we don't really care
             // - plus there is extra safety at the server side
 
-            alert('clicked')
             Burgers.buyOne(burgerId, bitcoins)
                 .then(function (response) {
-                    var message = '';
+                    var displayMessage   = '',
+                        validation    = response.data.message,
+                        idErrors      = response.data.id,
+                        paymentErrors = response.data.bitcoin;
 
-                    if (response.data.message) {
-                        message = message
+                    if (validation) {
+                        displayMessage = validation
                     }
                     else {
-                        if (response.data.id) {
+                        if (idErrors) {
 
-                            message += 'Something is wrong with our choice:';
-                            for (var i = 0; i < response.data.id.length; i++)
-                                message += i + '\n';
+                            displayMessage += 'Something is wrong with our choice:';
+                            for (var i = 0; i < idErrors.length; i++)
+                                displayMessage += idErrors[i] + '\n';
                         }
-                        if (response.data.bitcoin) {
+                        if (paymentErrors) {
 
-                            message += 'Something is wrong with our payment:'
-                            for (var i = 0; i < response.data.bitcoin.length; i++)
-                                message += i + '\n';
+                            displayMessage += 'Something is wrong with our payment:'
+                            for (var i = 0; i < paymentErrors.length; i++)
+                                displayMessage += paymentErrors[i] + '\n';
                         }
                     }
-                    alert(message);
+                    alert(displayMessage);
                 });
         }
     }]);

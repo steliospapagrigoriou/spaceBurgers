@@ -6,14 +6,14 @@ angular.module('spaceBurgersApp')
     .factory('Burgers', ['$http', function($http) {
         return {
             getAll: function () {
-                return $http.get('/api/burgers.json')
+                return $http.get(resourceUrl+'?format=json')
             },
             buyOne: function(burgerId, bitcoins){
                 return $http.post(
                     resourceUrl,
                     {
-                        Id: burgerId,
-                        Bitcoin: bitcoins
+                        id: burgerId,
+                        bitcoin: bitcoins
                     }
                 );
             }
