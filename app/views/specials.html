@@ -1,18 +1,11 @@
 
-<h3></h3>
 
 <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
     <div class="carousel-inner">
 
         <div ng-repeat="burger in specials"
              ng-class="{item : true, active: $first} "><!-- class of active since it's the first item -->
-            <img style="width:700; height:450;" src="https://space-burgers.herokuapp.com/{{burger.image}}" />
-            <div class="carousel-caption">
-                <h3>{{burger.name}} <span ng-show="burger.vegetarian" class="small"> Veggie safe</span></h3>
-                <p>{{burger.notes}}</p>
-                <h4> BTC:{{burger.bitcoin}}</h4>
-                <p><a href="#" class="btn btn-primary" ng-click='buyBurger(burger.id, burger.bitcoin)'role="button">Eat it!</a></p>
-            </div>
+            <burger-info burger="burger" type="'carousel'" ></burger-info>
         </div>
 
     </div><!-- /.carousel-inner -->

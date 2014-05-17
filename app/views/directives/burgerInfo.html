@@ -1,14 +1,14 @@
 
-<div class="thumbnail" style="height:450px;">
-    {{captionClass}}
-    <img style="widht:200px;height:120px;" src="https://space-burgers.herokuapp.com{{burger.image}}" alt="...">
-    <div class="caption">
+<img ng-class="{thumbnailImg: type == 'thumbnail', carouselImg: type =='carousel'}"
+         src="https://space-burgers.herokuapp.com{{burger.image}}" alt="...">
+
+    <div ng-class="{caption: type == 'thumbnail', 'carousel-caption': type =='carousel'}">
         <h3>{{burger.name}} <span ng-show="burger.vegetarian" class="small"> Veggie safe</span></h3>
         <p>{{burger.notes}}</p>
 
-        <p style="position:absolute; bottom:30px;">
-            <strong> BTC:{{burger.bitcoin}} </strong>
-            <a href="#" class="btn btn-primary" ng-submit="buyBurger(burger.id, burger.bitcoins)" role="button">Eat it!</a>
+        <p ng-class ="{bottom: type == 'thumbnail'}">
+            <h4> BTC:{{burger.bitcoin}} </h4>
+            <br ng-show="type == 'carousel'"/>
+            <a href="#" class="btn btn-primary" ng-click="buyBurger(burger.id, burger.bitcoin)" role="button">Eat it!</a>
         </p>
     </div>
-</div>

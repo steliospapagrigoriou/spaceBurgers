@@ -77,3 +77,17 @@ body {
     border-bottom: 0;
   }
 }
+
+.carouselImg {
+    width:700;
+    height:450;
+}
+
+.thumbnailImg {
+    width:200px;
+    height:120px;
+}
+
+.bottom {
+    position:absolute; bottom:30px;
+}
