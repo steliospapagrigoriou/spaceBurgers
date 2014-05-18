@@ -6,9 +6,11 @@
         <h3>{{burger.name}} <span ng-show="burger.vegetarian" class="small"> Veggie safe</span></h3>
         <p>{{burger.notes}}</p>
 
-        <p ng-class ="{bottom: type == 'thumbnail'}">
+        <div ng-class ="{bottom: type == 'thumbnail'}">
+        <p>
             <h4> BTC:{{burger.bitcoin}} </h4>
-            <br ng-show="type == 'carousel'"/>
+            <br/>
             <a href="#" class="btn btn-primary" ng-click="buyBurger(burger.id, burger.bitcoin)" role="button">Eat it!</a>
         </p>
+        </div>
     </div>
