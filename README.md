@@ -7,5 +7,12 @@ directly request other servers, you have to make your server act as proxy) and p
 Most of the assumptions I made, I write them in inline comments!
 
 It was a nice exercise and it was fun - I never had to use some of those things in Angular before and I'm glad I had to speed learn
-them this way : )
+them this way!
+
+RUN IT: 
+bower install
+npm install 
+grunt serve
+
+Will do the tricks
 

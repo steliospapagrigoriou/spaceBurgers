@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91f8785b-5b07-41ae-8bd3-185be4f56c03" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/api/burgers.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directives/burgerInfo.html" afterPath="$PROJECT_DIR$/app/views/directives/burgerInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/burgerInfo.js" afterPath="$PROJECT_DIR$/app/scripts/directives/burgerInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/burgerList.html" afterPath="$PROJECT_DIR$/app/views/burgerList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="91f8785b-5b07-41ae-8bd3-185be4f56c03" name="Default" comment="" />
     <ignored path="spaceBurgers.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +26,8 @@
       <file leaf-file-name="burgerInfo.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/directives/burgerInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32507738" vertical-offset="0" max-vertical-offset="646">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.44117647" vertical-offset="0" max-vertical-offset="646">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -580,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directives/burgerInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32507738" vertical-offset="0" max-vertical-offset="646">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.44117647" vertical-offset="0" max-vertical-offset="646">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding />
         </state>
       </provider>
