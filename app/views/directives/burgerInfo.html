@@ -10,7 +10,11 @@
         <p>
             <h4> BTC:{{burger.bitcoin}} </h4>
             <br/>
-            <a href="#" class="btn btn-primary" ng-click="buyBurger(burger.id, burger.bitcoin)" role="button">Eat it!</a>
+            <a ng-class="{btn:true, 'btn-primary': true, disabled: !isOnline}"
+               ng-click="buyBurger(burger.id, burger.bitcoin)"
+               role="button">
+                Eat it!
+            </a>
         </p>
         </div>
     </div>
